@@ -1,427 +1,359 @@
 * {
- margin: 0;
- padding: 0;
+  margin: 0;
+  padding: 0;
+ 
 }
 
 /*......... Navigation.......... */
 
 div.navigation {
- background: floralwhite;
- display: flex;
- height: 100px;
- align-items: center;
- justify-content: space-between;
- 
+  width: 100%;
+  position: fixed;
+  background: rgb(197, 189, 189);
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 20px 20px;
 }
 
 .main .navigation .logo {
- display: inline-flex;
- flex-direction: row;
- justify-content: space-between;
- align-items: center;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main .navigation .logo img {
- border-radius: 50%;
- height: 70px;
- width: 70px;
- margin-left: 40px;
- z-index: 70;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-left: 40px;
+  z-index: 70;
 }
 
 .logo h1 {
- padding-left: 20px;
- color: black;
- z-index: 500;
+  padding-left: 20px;
+  color: black;
+  z-index: 10;
 }
 
 div .navigation .nav_items {
- display: block;
+  display: block;
 }
 
 ul li {
- list-style-type: none;
- margin-right: auto;
+  list-style-type: none;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
 }
 
 ul li a {
- align-items: center;
- display: inline-block;
- text-transform: uppercase;
- margin-right: 20px;
- padding-left: 5px;
- color: black;
- text-decoration: none;
- font-size: 1.5rem;
- font-weight: 400;
+  align-items: center;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0 20px 0 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 100;
 }
 
 ul li a:hover {
- color: black;
- width: max-content;
- border: 1px solid;
- border-width: 1px;
- border-radius: 30px;
- background: white;
+  color: black;
+  width: content;
+  border: 1px solid;
+  border-width: 1px;
+  border-radius: 30px;
+  background: white;
 }
-
 
 /* .........home  ..............*/
 
 .main .profile {
- background: url(drone.png);
- visibility: transparent;
- 
- display: flex;
- justify-content: space-between;
- height: 600px;
- background: whitesmoke;
- border-radius: 20px;
- align-content: center;
+  height: 100vh;
+  display: flex;
+  padding-top: 20vh;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: justify;
+  /* border: 2px solid red; */
 }
 
 .main .profile .text {
-/*   background-image: url(/drone.png);
- background-size: cover;
- background-repeat: no-repeat;
- background-position-x: -150px; */
- height: 500px;
- width: 50%;
- margin-top: 50px;
- margin-left: 30px;
- border-radius: 10px 20px;
- z-index: 3000;
+  /* border: 1px solid red; */
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+font-size: 20px;
 }
 
-.text button{
- margin-top: 50px;
- margin-left: 50px;
- text-align: center;
- text-decoration-line: none;
- font-size: 1.8rem;
- color: red;
- width: 200px;
- height: 40px;
- z-index: 50;
- border: 1px solid black;
- border-bottom: 4px solid black;
- border-right: 4px solid black;
- 
-}
-button a{
- text-decoration: none;
- color: red;
+.text button {
+  margin: 50px;
+  text-align: center;
+  text-decoration-line: none;
+  font-size: 1rem;
+  color: red;
+  width: 200px;
+  height: 40px;
+  z-index: 50;
+  border: 1px solid black;
+  border-bottom: 4px solid black;
+  border-right: 4px solid black;
 }
 
-h2.hello {
- margin-top: 70px;
- margin-left: 10px;
+button a {
+  text-decoration: none;
+  color: red;
 }
+
 
 span {
- font-size: 5rem;
- padding: 10px;
- font-weight: 1000;
- font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 5rem;
+  padding: 20px 0;
+  font-weight: 1000;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-h2.ui {
- padding-left: 10px;
- padding-bottom: 10px;
-}
 
-p.summary {
- padding-top: 40px;
- padding-left: 10px;
- font-size: 1.5rem;
- letter-spacing: 1px;
- line-height: 30px;
+
+.main .profile p .summary {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 30px;
 }
 
 .main .profile .picture {
- position: relative;
- background-size: cover;
- height: 400px;
- border-radius: 50%;
- width: 400px;
- margin-top: 80px;
- margin-right: 15px;
- justify-items: center;
- align-items: center;
+  background-image: url(face1.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
 }
-
-.main .profile .picture img {
- position: absolute;
- background-size: cover;
- height: 400px;
- border-radius: 50%;
- width: 400px;
- margin-right: 15px;
-}
-
-
 
 /* .... ....About me .............. */
 
 .skills {
- display: flex;
- height: 600px;
- border-bottom: 1px solid black;
- visibility: transparent;
+  display: flex;
+  height: 90vh;
+  border-bottom: 1px solid black;
+  justify-content: center;
+  align-items: center;
 }
 
 .myskills {
- margin: 50px 0px 40px 40px;
- width: 90%;
- 
+  margin: 50px 0px 40px 40px;
+  width: 90%;
 }
-.myskills h1.heading{
- font-size: 3.5rem;
- letter-spacing: 2px;
-}
-
-.myskills p{
- margin-top: 20px;
- font-size: 1.5rem;
- font-weight: 400;
- line-height: 30px;
- letter-spacing: 0.8px;
+.myskills h1.heading {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
 }
 
-.myskills .title{
- margin-top: 40px;
+.myskills p {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.8px;
 }
 
-.myskills .title h1{
- font-weight: 500;
+.myskills .title {
+  margin-top: 40px;
 }
 
-.myskills .title input{
- margin-bottom: 40px;
- width: 100%;
+.myskills .title h1 {
+  font-weight: 500;
 }
 
-
-
-.contact{
- height: auto;
-position: relative;
-}
-.contact_me .drone{
- position: absolute;
- background-size: cover;
- width:50vh;
- opacity: 10%; 
-}
-.contact_me p{
-padding-top: 40px;
-padding-left: 30px;
-font-size: 2rem;
-text-transform: capitalize;
-font-weight: 600;
-letter-spacing: 2px;
-text-decoration-line: underline;
-text-decoration-color: skyblue;
-
+.myskills .title input {
+  margin-bottom: 40px;
+  width: 100%;
 }
 
-#contact_me{
- display: flex;
- justify-content: space-between;
-}
-
-#contact_me .address_box{
- height: 450px;
- width: 300px;
- margin-top: 40px;
- margin-left: 30px;
- border:none;
- border-radius: 20px;
- background: ghostwhite;
- z-index: 100;
- mix-blend-mode: multiply;
- 
-}
-#contact_me .address_box .story{
- margin:15px;
- 
-}
-
-#contact_me .address_box .story h1{
- font-size: 2rem;
- font-weight: 1000;
- 
-}
-.address{
- display: flex;
- flex-direction: row;
- width: 230px;
- margin-top: 50px;
- margin-left: 20px;
- border: none;
-}
-
-.address .icon img{
- height:40px;
- width: 40px;
- border-radius: 50%;
- display: block;
- margin-bottom: 40px;
-}
-
-#home_address{
- margin-left: 35px;
- margin-bottom: 50px;
-}
-
-#mail_address{
- margin-left: 35px;
- margin-bottom: 65px;
-}
-
-#number_address{
- margin-left: 35px;
-}
+/* ..........contact page............. */
 
 
-/* .......comment........ */
-#contact_me .comment{
- margin-top: 40px;
- height: 450px;
- width: 600px;
- background: whitesmoke;
- mix-blend-mode: multiply;
- border-radius: 15px;
- margin-right: 20px;
+.contact {
+  display: block;
+height: 90vh;
+justify-content: center;
+align-items: center;
+}
+.contact_me h1 {
+  padding-top: 40px;
+  padding-left: 30px;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-decoration-line: underline;
+  text-decoration-color: skyblue;
+}
+
+#contact_me {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#contact_me .address_box {
+  height: auto;
+  width: 300px;
+  margin-top: 40px;
+  margin-left: 30px;
+  /* border: 2px solid green; */
+  border-radius: 20px;
+  background: lightgrey;
+  z-index: 100;
+  mix-blend-mode: multiply;
+}
+#contact_me .address_box .story {
+  margin-bottom: 15px;
+}
+
+#contact_me .address_box .story h1 {
+  font-size: 1.5rem;
+  font-weight: 1000;
+}
+.address {
+  display: flex;
+ justify-content: space-around;
+ align-items: center;
+  /* border: 2px solid red; */
+}
+
+.address .icon {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+.address .icon img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: block;
+  /* margin-bottom: 40px; */
+  padding: 35px 0;
+}
+
+.address .icon_address {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+}
+
+.address .icon_address h3 {
+padding: 40px 0;
+}
+
+/* .......comment section   ........ */
+#contact_me .comment {
+  margin-top: 40px;
+  height: 450px;
+  width: 600px;
+  background: lightgray;
+  mix-blend-mode: multiply;
+  border-radius: 15px;
+  margin-right: 20px;
+  /* border: 2px solid blue; */
 }
 
 .say_something {
- padding-left: 20px;
- font-family: 500;
- font-size: 2.5rem;
- padding-top: 5px;
- text-transform: capitalize;
- font-weight: 500;
- 
+  padding-left: 20px;
+  font-family: 500;
+  font-size: 2.5rem;
+  padding-top: 5px;
+  text-transform: capitalize;
+  font-weight: 500;
 }
 
-.user{
- margin-top: 30px;
- margin-left: 20px;
- height: 350px;
- width: 550px;
+.comment .user {
+  margin-top: 30px;
+  margin-left: 20px;
+  height: 500px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
 }
 /* ..... comment input...... */
 
-.user input{
- margin-bottom: 20px;
- border-radius: 5px;
- overflow: hidden;
+.user input {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-
-.user input#name,#email,#subject{
- height: 35px;
- width: 250px;
- border: 1px solid black;
+.user input#name,
+#email,
+#subject {
+  height: 35px;
 }
 
-.user input#name,#email{
- display: inline-block;
- justify-content: space-between;
+.user input#subject {
+  display: block;
+  align-items: vertical-align;
+  width: 100%;
 }
 
-.user input#email{
- margin-left: 42px;
+.user input#message {
+  height: 150px;
+  width: 550px;
+  border: 1px solid blue;
+  overflow: hidden;
 }
 
-.user input#subject{
- display: block;
- align-items: vertical-align ;
- width: 100%;
+.comment .user button {
+  margin: 10px;
+  background: seagreen;
+  width: 180px;
+  height: 40px;
+  border: 1px solid black;
+  border-bottom: 3px solid black;
+  border-right: 2px solid black;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  color: white;
 }
-
-
-.user input#message{
- height: 150px;
- width: 550px;
- border: 1px solid blue;
- overflow: hidden;
-}
-
-.user button{
-background: seagreen;
- width: 180px;
- height: 40px;
- border: 1px solid black;
- border-bottom: 4px solid black;
- border-right: 4px solid black;
- z-index: 100;
- font-size: 1.5rem;
- letter-spacing: 1.5px;
- color:white;
-}
-
-
 
 /* ....social media links...... */
-.social_media{
- position: absolute;
- top:600px;
- margin-left: 43%;
- justify-content: center;
- 
-}
-.social_media h1{
- font-size: 2.5rem;
- text-transform: capitalize;
- text-decoration: underline;
-}
- 
-
-
-.links{
- position: relative;
- display: flex;
- justify-content: center;
- flex-direction: row;
- align-items: center;
- margin-top: 80px;
- padding-left: 20px;
+.main .links {
+  margin: 20px 0px 20px 0;
+  display: flex;
+  /* border: 2px solid red; */
+  height: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
-.facebook img{
- height: 60px;
- width: 60px;
- border-radius: 50%;
- margin:5px;
- z-index: 100;
+.main .links .facebook, .instagram, .telegram, .whatsapp{
+  display: inline;
+  padding: 5px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.instagram img{
- height: 60px;
- width: 60px;
- border-radius: 50%;
- background: none;
- margin: 5px;
- z-index: 100;
+.main .links .facebook img{
+height: 40px;
+width: 40px;
 }
 
-.telegram img{
- height: 60px;
- width: 60px;
- border-radius: 50%;
- background: none;
- margin: 5px;
- z-index: 100;
-}
+.main .links .instagram img{
+  height: 40px;
+  width: 40px;
+  }
 
-.whatsapp img{
- height: 60px;
- width: 60px;
- border-radius: 50%;
- background: none;
- margin: 5px;
- z-index: 100;
-}
+  .main .links .telegram img{
+    height: 40px;
+    width: 40px;
+    }
+
+    .main .links .whatsapp img{
+      height: 40px;
+      width: 40px;
+      }
