@@ -1,359 +1,402 @@
 * {
   margin: 0;
   padding: 0;
- 
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
-/*......... Navigation.......... */
+:root {
+  --bg-color: #1f242d;
+  --text-color: #fff;
+  --second-bg-color: #323946;
+  --main-color: #0ef;
+}
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
 
-div.navigation {
-  width: 100%;
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+/*................ header ....................   */
+
+.header {
   position: fixed;
-  background: rgb(197, 189, 189);
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background: var(--bg-color);
   display: flex;
-  height: 50px;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 0 0 20px 20px;
-}
-
-.main .navigation .logo {
-  display: inline-flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
 }
 
-.main .navigation .logo img {
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  margin-left: 40px;
-  z-index: 70;
+.logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
 }
 
-.logo h1 {
-  padding-left: 20px;
-  color: black;
-  z-index: 10;
-}
-
-div .navigation .nav_items {
-  display: block;
-}
-
-ul li {
-  list-style-type: none;
-  margin: auto;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-
-}
-
-ul li a {
-  align-items: center;
-  display: inline-block;
-  text-transform: uppercase;
-  padding: 0 20px 0 10px;
-  color: black;
-  text-decoration: none;
+.navbar a {
+  list-style: none;
   font-size: 1rem;
-  font-weight: 100;
+  color: var(--text-color);
+  margin-left: 4rem;
 }
 
-ul li a:hover {
-  color: black;
-  width: content;
-  border: 1px solid;
-  border-width: 1px;
-  border-radius: 30px;
-  background: white;
+.navbar a:hover,
+.navbar a:active {
+  color: var(--main-color);
 }
 
-/* .........home  ..............*/
+#menu-icon {
+  display: none;
+}
+/* .................homepage  ..............*/
 
-.main .profile {
-  height: 100vh;
+.home {
+  /* background: url('../images/homepage-bg.jpg') no-repeat center center / cover; */
   display: flex;
-  padding-top: 20vh;
-  justify-content: space-evenly;
-  align-content: center;
-  text-align: justify;
-  /* border: 2px solid red; */
-}
-
-.main .profile .text {
-  /* border: 1px solid red; */
-  text-align: left;
   justify-content: center;
   align-items: center;
-  text-align: left;
-font-size: 20px;
 }
 
-.text button {
-  margin: 50px;
-  text-align: center;
-  text-decoration-line: none;
-  font-size: 1rem;
-  color: red;
-  width: 200px;
-  height: 40px;
-  z-index: 50;
-  border: 1px solid black;
-  border-bottom: 4px solid black;
-  border-right: 4px solid black;
+.home-content h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
 }
-
-button a {
-  text-decoration: none;
-  color: red;
+.home-content h3:nth-of-type(2) {
+  margin-bottom: 2rem;
 }
-
 
 span {
-  font-size: 5rem;
-  padding: 20px 0;
-  font-weight: 1000;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: var(--main-color);
 }
 
-
-
-.main .profile p .summary {
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-  line-height: 30px;
+.home-content h1 {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.3;
 }
 
-.main .profile .picture {
-  background-image: url(face1.jpg);
+.home-content p {
+  font-size: 1.6rem;
+}
+
+.home-img {
+  background: green;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
+  width: 35vw;
+  height: 70vh;
+  border-radius: 2rem;
 }
 
-/* .... ....About me .............. */
-
-.skills {
-  display: flex;
-  height: 90vh;
-  border-bottom: 1px solid black;
+.social-media a {
+  margin: 3rem 1.5rem 3rem 0;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-}
-
-.myskills {
-  margin: 50px 0px 40px 40px;
-  width: 90%;
-}
-.myskills h1.heading {
-  font-size: 3.5rem;
-  letter-spacing: 2px;
-}
-
-.myskills p {
-  margin-top: 20px;
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.8px;
-}
-
-.myskills .title {
-  margin-top: 40px;
-}
-
-.myskills .title h1 {
-  font-weight: 500;
-}
-
-.myskills .title input {
-  margin-bottom: 40px;
-  width: 100%;
-}
-
-/* ..........contact page............. */
-
-
-.contact {
-  display: block;
-height: 90vh;
-justify-content: center;
-align-items: center;
-}
-.contact_me h1 {
-  padding-top: 40px;
-  padding-left: 30px;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
   font-size: 2rem;
-  text-transform: capitalize;
+  color: var(--main-color);
+  transition: 0.5s ease;
+}
+
+.social-media a:hover {
+  background: var(--main-color);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 0.7rem var(--main-color);
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
   font-weight: 600;
-  letter-spacing: 2px;
-  text-decoration-line: underline;
-  text-decoration-color: skyblue;
+  color: var(--second-bg-color);
 }
 
-#contact_me {
+.btn:hover {
+  box-shadow: none;
+}
+
+/* .....................  about-page .............. */
+
+.about {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#contact_me .address_box {
-  height: auto;
-  width: 300px;
-  margin-top: 40px;
-  margin-left: 30px;
-  /* border: 2px solid green; */
-  border-radius: 20px;
-  background: lightgrey;
-  z-index: 100;
-  mix-blend-mode: multiply;
-}
-#contact_me .address_box .story {
-  margin-bottom: 15px;
+.about-img {
+  background: green;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+  border-radius: 2rem;
+  
 }
 
-#contact_me .address_box .story h1 {
+.about-content {
+  margin-left: 2rem;
+}
+.about-content h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.about-content h3 {
+  font-size: 2.6rem;
+}
+
+.heading {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.about-content p {
   font-size: 1.5rem;
-  font-weight: 1000;
-}
-.address {
-  display: flex;
- justify-content: space-around;
- align-items: center;
-  /* border: 2px solid red; */
+  margin: 2rem 0 3rem;
 }
 
-.address .icon {
+/* ..........services-page .................. */
+.services {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid black; */
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
-.address .icon img {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  display: block;
-  /* margin-bottom: 40px; */
-  padding: 35px 0;
+.services h2 {
+  margin-bottom: 5rem;
 }
-
-.address .icon_address {
+.services-container {
   display: flex;
-  flex-direction: column;
-  /* border: 2px solid red; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 50vw;
 }
 
-.address .icon_address h3 {
-padding: 40px 0;
+.card {
+  /* flex: 1 1 30rem; */
+  background: var(--second-bg-color);
+  padding: 3rem 3rem 4rem;
+  border-radius: 2rem;
+  border: 0.2rem solid var(--bg-color);
+  transition: 0.4s ease-out;
+  text-align: center;
 }
 
-/* .......comment section   ........ */
-#contact_me .comment {
-  margin-top: 40px;
-  height: 450px;
-  width: 600px;
-  background: lightgray;
-  mix-blend-mode: multiply;
-  border-radius: 15px;
-  margin-right: 20px;
-  /* border: 2px solid blue; */
+.services-container .card i {
+  font-size: 4rem;
+}
+.services-container .card p {
+  text-align: justify;
+  text-justify: auto;
+  margin: 2rem 0;
 }
 
-.say_something {
-  padding-left: 20px;
-  font-family: 500;
+.services-container .card h3 {
   font-size: 2.5rem;
-  padding-top: 5px;
-  text-transform: capitalize;
-  font-weight: 500;
+}
+.services-container .card:hover {
+  border-color: var(--main-color);
+  border-width: 0.1rem;
+  transform: scale(1.02);
 }
 
-.comment .user {
-  margin-top: 30px;
-  margin-left: 20px;
-  height: 500px;
-  width: 550px;
-  display: flex;
-  flex-direction: column;
-}
-/* ..... comment input...... */
+/* .........Projects-page................ */
 
-.user input {
-  margin-bottom: 20px;
-  border-radius: 5px;
+.projects {
+  background: var(--second-bg-color);
+}
+.projects h2 {
+  margin-bottom: 4rem;
+}
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.projects-container .projects-card {
+  position: relative;
+  border-radius: 2rem;
   overflow: hidden;
+  display: flex;
 }
 
-.user input#name,
-#email,
-#subject {
-  height: 35px;
-}
-
-.user input#subject {
-  display: block;
-  align-items: vertical-align;
+.projects-card img {
   width: 100%;
+  transition: 1s ease-out;
 }
 
-.user input#message {
-  height: 150px;
-  width: 550px;
-  border: 1px solid blue;
-  overflow: hidden;
+.projects-card:hover img {
+  transform: scale(1.1);
 }
 
-.comment .user button {
-  margin: 10px;
-  background: seagreen;
-  width: 180px;
-  height: 40px;
-  border: 1px solid black;
-  border-bottom: 3px solid black;
-  border-right: 2px solid black;
-  font-size: 1.5rem;
-  letter-spacing: 1.5px;
-  color: white;
-}
-
-/* ....social media links...... */
-.main .links {
-  margin: 20px 0px 20px 0;
+.projects-card .projects-layer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
   display: flex;
-  /* border: 2px solid red; */
-  height: 50px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0rem 4rem;
+  transform: translateY(100%);
+  transition: 1s ease-in;
+}
+
+.projects-card:hover .projects-layer {
+  transform: translateY(0);
+}
+.projects-layer h3 {
+  font-size: 3rem;
+}
+
+.projects-layer p {
+  font-size: 1.6rem;
+  margin: 0.3rem 0 1rem;
+}
+
+.projects-layer a {
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: var(--text-color);
+  border-radius: 50%;
 }
 
-.main .links .facebook, .instagram, .telegram, .whatsapp{
-  display: inline;
-  padding: 5px;
-  height: 40px;
+.projects-layer a i {
+  font-size: 1.5rem;
+  color: var(--second-bg-color);
+}
+
+/* ....................Contact-Page................. */
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.contact h2{
+  position: absolute;
+  top: 0;
+  margin: 3rem 0;
+
+}
+.detail {
+  background: var(--second-bg-color);
+  border-radius: 1rem;
+  padding: 8rem 4rem;
+}
+.detail .detail-content {
+  display: flex;
+  padding-top: 2rem;
+}
+
+.detail-content h4 {
+  padding-left: 2rem;
+}
+
+.message {
+  background: var(--second-bg-color);
+  padding: 2rem 1rem 2rem 1rem;
+  border-radius: 1rem;
+}
+
+.message form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.message form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.message form .input-box input,
+.message form textarea {
+  width: 100%;
+  padding: 1rem;
+  color: var(--text-color);
+  background: var(--bg-color);
+  border-radius: .8rem;
+  margin: .7rem 0;
+}
+
+.message form .input-box input{
+  width: 49%;
+}
+
+.message form textarea{
+  resize: none;
+}
+
+.message form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--second-bg-color);
+  flex-wrap: wrap;
+padding: 1rem 15%;
+}
+
+.footer-text p{
+  font-size: .8rem;
+}
+
+.footer-icontop a{
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  padding: .5rem;
+  background: var(--main-color);
+  border-radius: .8rem;
+  transition: .2s ease;
 }
 
-.main .links .facebook img{
-height: 40px;
-width: 40px;
+.footer-icontop:hover a {
+  box-shadow: 0 0 .5rem var(--main-color);
 }
-
-.main .links .instagram img{
-  height: 40px;
-  width: 40px;
-  }
-
-  .main .links .telegram img{
-    height: 40px;
-    width: 40px;
-    }
-
-    .main .links .whatsapp img{
-      height: 40px;
-      width: 40px;
-      }
+.footer-icontop a i{
+  font-size: 2rem;
+  color: var(--second-bg-color);
+}
