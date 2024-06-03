@@ -15,6 +15,7 @@
   --second-bg-color: #323946;
   --main-color: #0ef;
 }
+
 body {
   background: var(--bg-color);
   color: var(--text-color);
@@ -24,6 +25,7 @@ section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
 }
+
 /*................ header ....................   */
 
 .header {
@@ -59,6 +61,7 @@ section {
 #menu-icon {
   display: none;
 }
+
 /* .................homepage  ..............*/
 
 .home {
@@ -74,6 +77,7 @@ section {
   font-size: 3.2rem;
   font-weight: 700;
 }
+
 .home-content h3:nth-of-type(2) {
   margin-bottom: 2rem;
 }
@@ -139,8 +143,7 @@ span {
 }
 
 .about-img {
-  background: url("img/158029af-a86a-402f-a5b5-e915cc69f138.avif") no-repeat
-    center center / cover;
+  background: url("img/158029af-a86a-402f-a5b5-e915cc69f138.avif") no-repeat center center / cover;
   width: 100%;
   height: 50vh;
   border-radius: 2rem;
@@ -149,6 +152,7 @@ span {
 .about-content {
   margin-left: 2rem;
 }
+
 .about-content h2 {
   text-align: left;
   line-height: 1.2;
@@ -176,9 +180,11 @@ span {
   text-align: center;
   align-items: center;
 }
+
 .services h2 {
   margin-bottom: 5rem;
 }
+
 .services-container {
   display: flex;
   justify-content: center;
@@ -201,6 +207,7 @@ span {
 .services-container .card i {
   font-size: 4rem;
 }
+
 .services-container .card p {
   text-align: justify;
   text-justify: auto;
@@ -210,6 +217,7 @@ span {
 .services-container .card h3 {
   font-size: 2.5rem;
 }
+
 .services-container .card:hover {
   border-color: var(--main-color);
   border-width: 0.1rem;
@@ -221,9 +229,11 @@ span {
 .projects {
   background: var(--second-bg-color);
 }
+
 .projects h2 {
   margin-bottom: 4rem;
 }
+
 .projects-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -241,10 +251,12 @@ span {
 .projects-card img {
   width: 100%;
   transition: 1s ease-out;
+  opacity: 0.7;
 }
 
 .projects-card:hover img {
   transform: scale(1.1);
+  opacity: 0.1;
 }
 
 .projects-card .projects-layer {
@@ -267,6 +279,7 @@ span {
 .projects-card:hover .projects-layer {
   transform: translateY(0);
 }
+
 .projects-layer h3 {
   font-size: 3rem;
 }
@@ -304,11 +317,13 @@ span {
   top: 0;
   margin: 3rem 0;
 }
+
 .detail {
   background: var(--second-bg-color);
   border-radius: 1rem;
   padding: 8rem 4rem;
 }
+
 .detail .detail-content {
   display: flex;
   padding-top: 2rem;
@@ -386,6 +401,7 @@ footer {
 .footer-icontop:hover a {
   box-shadow: 0 0 0.5rem var(--main-color);
 }
+
 .footer-icontop a i {
   font-size: 2rem;
   color: var(--second-bg-color);
